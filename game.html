@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natejack 2</title>
+    <link rel="icon" type="icon" sizes="32x32" href="./images/favicon-32x32.png ">
+    <!-- <script src="./index.js"></script> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href= "bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Lilita+One&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Roboto+Condensed&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div class="row g-2 p-0 m-0">
+            <div class="col col-lg-4 d-none d-md-flex">
+                <div class="bg overflow-auto">
+                    <div class="text-center mb-1">
+                        <h4 class="second text-decoration-underline">How To Play</h4>
+                    </div>
+                    <div class="card-text small ms-2 me-2" >
+                        <p>Test your luck against the Bot in this Simple yet Fun Natejack Game 2 </p>
+                        <p>
+                            Draw cards and try not to get the sum total of your cards above 21.
+                            <br>
+                            Try to Win all the Bot's Money  
+                        </p>
+                      <ul>
+                        <li class="mt-1">
+                            If the sum total of your cards is greater than the sum total of the bot's cards You win the Pot <br>  i.e <span>Your sum = 19 & Bot's sum = 18</span>
+                        </li>
+                        <li class="mt-1">
+                            If you get a total sum of <span class="fourth">21</span> and the Bot gets higher or lower than you, You win the Pot <span> <br> i.e Your sum = 21 & Bot's sum = 22  <span> <br> or</span> <br> Your sum = 21 & Bot's sum = 20</span>
+                        </li>
+                        <li class="mt-1">
+                            If the first two cards drawn are Aces you automatically win regardless of the  bots sum being higher than yours
+                        </li>
+                      </ul>
+                        <p class="fourth">* Note: If reverse is the case, The bot wins the Pot *</p>
+
+                        <h5 class="mt-3 text-center fw-bolder second">TIE</h5>
+
+                        <p>There are two different scenerios for a tie to occur</p>
+                        <p>If you get the same total as the Bot You tie</p>
+                        <p>If both you and the Bot gets above 21, You Tie</p>
+
+                        <h5 class="mt-3 text-center fw-bolder second">TIE BREAKER</h5>
+                        <p>When You and the Bot Ties a particular round, the winner of the Pot will be decided through a Tiebreaker: a minigame where u each draw a single card and whoever gets an Ace or a Higher card wins the Pot.</p>
+
+                        <h4 class="mt-3 text-center fw-bolder text-dark">How to play II</h4>
+                       <div>
+                        <p class="mt-1">You and the Bot are both giving $1000</p>
+                        <p>Place bets into the Pot before drawing your cards</p>
+                        <p class="mb-1">The Pot is where bet for that particular round are kept, then given out to the winner of said round;</p>
+                        <ul class="mt-2">
+                            <li class="mb-2"><button class="btn btn-sm " >PLAY</button>
+                                <span> Draws Two random cards for You and the Bot</span>
+                            </li>
+                            <li class="mb-2"><button class="btn btn-sm btn-2">HIT</button>
+                                <span>This is for drawing a new card for just you..(The Bot can decide wether it wants to Hit or Stand)</span>
+                            </li>
+                            <li class="mb-2"><button class="btn btn-sm btn-1">STAND</button>
+                                <span>This automatically reveals the Bot's cards and decide the winner of the Pot. When you stand: you are not drawing a new card but putting your cards on the table(virtual)</span>
+                            </li>
+                        </ul>
+                        <p class="fourth">*Standing dosen't mean the Bot will..the Bot might decide to draw a new card before Standing*</p>
+                        <br>
+                        <h5 class="fw-bolder text-center text-dark">Need to Know</h5>
+                        <p>When you draw a K,Q and J: Each carry the same total of 10</p>
+                       </div>
+                       <p class="card-title">Enjoy your game</p>
+                    </div>
+                    
+                </div>
+                         
+            </div><!--end of col -->
+            <div class="col col-lg-8 d-block p-0 m-0">
+                <h1  class="col-12 col-lg-8">NATEJACK 2</h1>
+                <!-- computer name baord -->
+                <div class="name-board col-sm-8 col-md-10 col-lg-6 border border-top-0 border-2 rounded-bottom mx-auto">
+                    <div class="d-flex fw-bold board-contents">
+                        <div class="ms-3 me-1 d-flex">
+                            <i class="bi me-1 text-danger bi-robot fs-4"></i>
+                            <p class="mt-1 pt-1 me-sm-5 me-md-0 pe-sm-5 pe-md-0 me-5  text-secondary">AI BOT</p>
+                        </div>
+                        <p id="bot-choice" class="choice"></p>
+                        <div class="d-flex ms-md-5 ps-md-5 fw-bold mx-3"> 
+                            <i class="bi bi-coin me-1 text-warning fs-4"></i>
+                            <p id="bot-cash-msg" ></p>
+                            <p class="fs-5 text-success mt-1" id="bot-cash">$1000</p>
+                        </div>
+                    </div>
+                </div> <!--end of Computer Name board-->
+
+
+                <div class="gamebody text-center">
+                    <div class="gamebody-contents">
+                        <div class="bot-cards">
+                            <div class="sum-cards" id="bot-sum"></div>
+                            <p class="cards text-danger mt-3 d-flex justify-content-center" id="bot-cards"></p>
+                            <i class="bi bi-arrow-up-square-fill fw-bold" id="icon"></i>
+                            <div class="cards text-danger">Bot Cards Drawn</div>
+                               
+                        </div>
+                        <div class="pot  bg-warning d-flex justify-content-center" id="potbox">
+                            <p>POT:</p>
+                            <p id="pot"> $0</p>
+                        </div>
+
+
+
+                        <!-- Modal -->
+                            <div class="myModal " id="modal">
+                                <div class="modal-contents">
+                                    <div class="modal-head"></div>
+                                    <div class="modal-body  mx-auto text-center">
+                                        <p>You Drew An <Span> Ace </Span></p>
+                                        <p>What Value Do You Want Your <Span> Ace </Span> To Carry?</p>
+                                        <p id="cards-drawn"></p>
+                                            <div class="btns d-flex justify-content-center">
+                                                <button value="1" type="submit" onclick="playerChoice_1(this.innerText)" id="player-choice-1">1</button>
+                                                <button  value="11" type="submit" onclick="playerChoice_2(this.innerText)" id="player-choice-2">11</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Modal -->
+                            <div class="myModal" id="modal-1">
+                                <div class="modal-contents">
+                                    <div class="modal-head"><h2>Tie!!!</h2></div>
+                                    <div class="modal-body pb-5 d-block mx-auto text-center">
+                                        <p id="tie-msg">You and The Bot Got Same Total <span class="text-success">TIE!!</span>.</p>
+                                    <h3>Tie Breaker</h3>
+                                    <p class="tie-msg">Draw  new card: If you draw a higher Card You Win</p>
+                                    <p class="tie-msg">If U Draw An ACE: You Win</p>
+                                    <button id="tie-button" class="mt-4">DRAW CARD</button>
+                                    <div class="d-flex justify-content-center">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Modal -->
+                            <div class="myModal d-md-none" id="modal-9">
+                                <div class="bg mx-auto overflow-auto">
+                                    <div class="text-center mb-1">
+                                        <h4 class="second text-decoration-underline">How To Play</h4>
+                                    </div>
+                                    <div class="card-text small ms-2 me-2" >
+                                        <p>Test your luck against the Bot in this Simple yet Fun Natejack Game 2 </p>
+                                        <p>
+                                            Draw cards and try not to get the sum total of your cards above 21.
+                                            <br>
+                                            Try to Win all the Bot's Money  
+                                        </p>
+                                      <ul>
+                                        <li class="mt-1">
+                                            If the sum total of your cards is greater than the sum total of the bot's cards You win the Pot <br>  i.e <span>Your sum = 19 & Bot's sum = 18</span>
+                                        </li>
+                                        <li class="mt-1">
+                                            If you get a total sum of <span class="fourth">21</span> and the Bot gets higher or lower than you, You win the Pot <span> <br> i.e Your sum = 21 & Bot's sum = 22  <span> <br> or</span> <br> Your sum = 21 & Bot's sum = 20</span>
+                                        </li>
+                                        <li class="mt-1">
+                                            If the first two cards drawn are Aces you automatically win regardless of the  bots sum being higher than yours
+                                        </li>
+                                      </ul>
+                                      bgtab
+                                        <p class="fourth">* Note: If reverse is the case, The bot wins the Pot *</p>
+                
+                                        <h5 class="mt-3 text-center fw-bolder second">TIE</h5>
+                
+                                        <p>There are two different scenerios for a tie to occur</p>
+                                        <p>If you get the same total as the Bot You tie</p>
+                                        <p>If both you and the Bot gets above 21, You Tie</p>
+                
+                                        <h5 class="mt-3 text-center fw-bolder second">TIE BREAKER</h5>
+                                        <p>When You and the Bot Ties a particular round, the winner of the Pot will be decided through a Tiebreaker: a minigame where u each draw a single card and whoever gets an Ace or a Higher card wins the Pot.</p>
+                
+                                        <h4 class="mt-3 text-center fw-bolder text-dark">How to play II</h4>
+                                       <div>
+                                        <p class="mt-1">You and the Bot are both giving $1000</p>
+                                        <p>Place bets into the Pot before drawing your cards</p>
+                                        <p class="mb-1">The Pot is where bet for that particular round are kept, then given out to the winner of said round;</p>
+                                        <ul class="mt-2">
+                                            <li class="mb-2"><button class="btn btn-sm " >PLAY</button>
+                                                <span> Draws Two random cards for You and the Bot</span>
+                                            </li>
+                                            <li class="mb-2"><button class="btn btn-sm text-dark btn-2">HIT</button>
+                                                <span>This is for drawing a new card for just you..(The Bot can decide wether it wants to Hit or Stand)</span>
+                                            </li>
+                                            <li class="mb-2"><button class="btn btn-sm btn-1">STAND</button>
+                                                <span>This automatically reveals the Bot's cards and decide the winner of the Pot. When you stand: you are not drawing a new card but putting your cards on the table(virtual)</span>
+                                            </li>
+                                        </ul>
+                                        <p class="fourth">*Standing dosen't mean the Bot will..the Bot might decide to draw a new card before Standing*</p>
+                                        <br>
+                                        <h5 class="fw-bolder text-center text-dark">Need to Know</h5>
+                                        <p>When you draw a K,Q and J: Each carry the same total of 10</p>
+                                       </div>
+                                       <p class="card-title">Enjoy your game</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                                <!-- Modal -->
+                                <div class="myModal" id="modal-1">
+                                    <div class="modal-contents">
+                                        <div class="modal-head"><h2>Tie!!!</h2></div>
+                                        <div class="modal-body pb-5 d-block mx-auto text-center">
+                                            <p id="tie-msg">You and The Bot Got Same Total <span class="text-success">TIE!!</span>.</p>
+                                        <h3>Tie Breaker</h3>
+                                        
+                                        <button id="restart" class="mt-4">DRAW CARD</button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                  <!-- Modal -->
+                                  <div class="myModal" id="modal-6">
+                                    <div class="modal-contents">
+                                        <div class="modal-body  pb-5 d-block mx-auto text-center">
+                                            <div class="image"></div>
+                                            <div class="statements">
+                                              <p class="text-dark mt-1">Cash Balance is Below <span class="text-success">$50</span>!!!</p> 
+                                              <p class="bg-primary text-danger fs-4">You've Lost All Your Money</p>
+                                              <p class="text-info">Today's not your day</p>
+                                              <!-- <p>No be me send u sha</p> -->
+                                            </div>
+                                            <div class="cash-balance text-danger d-flex mx-auto rounded-1 justify-content-center">
+                                                <p class="text-dark">Cash Balance:</p>
+                                                <p class="text-success ms-2" id="remainingCash">$</p>
+                                            </div>
+                                            <small id="retry">Retry</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Modal -->
+                                <div class="myModal" id="modal-7">
+                                    <div class="modal-contents">
+                                        <div class="modal-body  pb-5 d-block mx-auto text-center">
+                                            <div class="image"></div>
+                                            <div class="statements">
+                                              <p class="text-dark mt-1">Bot's Cash Balance Below <span class="text-success">$50</span>!!!</p> 
+                                              <p class="bg-primary text-success fs-4">You Won!!</p>
+                                              <p class="text-info">Guess today's your lucky day</p>
+                                              <!-- <p>No be me send u sha</p> -->
+                                            </div>
+                                            <div class="cash-balance text-danger d-flex mx-auto rounded-1 justify-content-center">
+                                                <p class="text-dark">Cash Balance:</p>
+                                                <p class="text-success ms-2" id="winningCash">$1000</p>
+                                            </div>
+                                            <small id="again">Go Again??</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Modal-->
+
+                            <div class="myModal-1" id="modal-5">
+                                <div class="modal-contents-1">
+                                 <div class="time-out-msg">
+                                    <h3>RELOADING</h3>
+                                    <p id="timeout"></p>
+                                 </div>
+                                </div>
+                            </div>
+
+                            <div class="myModal-1" id="modal-8">
+                                <div class="modal-contents-1">
+                                 <div class="time-out-msg">
+                                    <h3>RESTARTING...</h3>
+                                    <p id="timeout"></p>
+                                 </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="player-chips position-absolute">
+                                <div class="bet">BET CHIPS</div>
+
+                                <div class="chips text-primary bg-primary">
+                                    <p class="chips-el" onclick="bet_50()" id="50" >$50</p>
+                                </div>
+                                <div class="chips text-success bg-success">
+                                    <p class="chips-el" onclick="bet_100()" id="100" >$100</p>
+                                </div>
+                                <div class="chips text-warning bg-warning">
+                                    <p class="chips-el" onclick="bet_200()" id="200">$200</p>
+                                </div>
+                                <div class="chips bg-danger text-danger">
+                                    <p class="chips-el" onclick="bet_500()" id="500" >$500</p>
+                                </div>
+                            </div>
+
+                    <!-- Modal -->
+                            <div class="myModal2" id="Ace-win">
+                                <div class="modalcontents">
+                                    <p class="text-danger fs-1">You Got Two Ace</p>
+                                    <p class="text-success fs-1">Won Pot!!</p>
+                                </div>
+                            </div>
+
+
+
+                              <!-- Modal -->
+                              <div class="myModal2 " id="win">
+                                <div class="modalcontents">
+                                    <p class="text-success fs-1">Won Pot!!</p>
+                                </div>
+                            </div>
+                    
+                            <div class="myModal2" id="loose">
+                                <div class="modalcontents">
+                                    <p class="text-danger fs-1">Lost Pot!!</p>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="myModal2" id="Ace-lose">
+                                <div class="modalcontents">
+                                    <p class="text-primary fs-1">Bot Got Two Ace</p>
+                                    <p class="text-danger fs-1">Lose Pot!!!</p>
+                                </div>
+                            </div>
+
+                    
+                        <div class="player-cards">
+                            <div class="cards">Your Cards Drawn</div>
+                            <i class="bi bi-arrow-down-square-fill fw-bold"></i>
+                            <p class="cards d-flex justify-content-center" id="player-cards"></p>
+                            <div class="sum-cards mt-3" id="player-sum"></div>
+                        </div>
+                    </div>
+                    <p class="position-absolute pointer ms-2 mt-4 text-decoration-underline second d-md-none" id="rules">Rules</p>
+                    <div class="buttons">
+                        <p class="position-absolute text-center"  id="play-btn-msg">Place Bet</p>
+                        <button class="btn btn-sm " id="play-btn">PLAY</button>
+                        <button class="btn btn-sm btn-2" id="hit-btn">HIT</button>
+                        <button class="btn btn-sm btn-1" id="dob-btn">STAND</button>
+                    </div>
+
+                </div>
+
+                <!-- Player Name Board -->
+                <div class="name-board-2 col-sm-8 col-md-10 col-lg-6 border-2 rounded-top mx-auto">
+                    <div class="d-flex fw-bold board-contents">
+                        <div class="ms-3 me-1 d-flex">
+                            <i class="bi pt-1 text-danger bi-person-fill fs-4"></i>
+                            <p class="mt-1 pt-1 me-sm-5 me-md-0 pe-sm-5 pe-md-0 me-5  text-secondary" id="user-name">PLAYER</p>
+                        </div>
+                        <div class="d-flex ms-md-5 ps-md-5 fw-bold mx-3"> 
+                            <i class="bi bi-coin pt-1  me-2 text-warning fs-4"></i>
+                            <p id="player-cash-msg" ></p>
+                            <p class="fs-5 text-success mt-1" id="player-cash">$1000</p>
+                        </div>
+                    </div>
+                </div> 
+            </div><!--end of col -->
+        </div><!--end of row -->
+    </div><!--end of container -->
+
+   
+   
+    <script src="./index.js"></script> 
+</body>
+</html>

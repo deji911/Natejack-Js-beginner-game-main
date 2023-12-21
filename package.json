@@ -1,0 +1,22 @@
+{
+  "name": "blackjack-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maskil-evey/Natejack-Js-beginner-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maskil-evey/Natejack-Js-beginner-game/issues"
+  },
+  "homepage": "https://github.com/Maskil-evey/Natejack-Js-beginner-game#readme"
+}

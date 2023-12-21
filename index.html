@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NateJack 2.0</title>
+    <link rel="icon" type="icon" sizes="32x32" href="./images/favicon-32x32.png ">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href= "bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Lilita+One&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Roboto+Condensed&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <script src="./index.js"></script> -->
+</head>
+<body class="">
+    <div class="page-wrapper">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  text-center header">
+                    <div class="d-flex">
+                     <h1 class="text-center">NATEJACK</h1>
+                     <h1 class="ms-3">2</h1>
+                    </div>
+                </div>
+                    <br><br>
+                    <div>
+                        <div class="progress-2 text-center mx-auto">
+                            <p id="load">Loading...</p>
+                            <progress max="10" value="0" class="bar text-center mx-auto mt-2" id="progress-bar"></progress>
+                            <button class="text-center mx-auto" id="start">START GAME</button>
+
+
+                            <!-- Modal -->
+                            <div class="myModal" id="modal-4">
+                                <div class="modal-contents">
+                                    <div class="modal-body pb-5 d-block mx-auto text-center">
+                                        <p class="text-danger mt-3">New Player??</p>
+                                        <p class="text-danger">Player Game Saved: <span id="not-player" class="text-success"></span></p>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="me-3 text-decoration-underline text-primary" id="cont">Continue Saved Game</p>
+                                            <p class="me-3 text-decoration-underline text-primary" id="newPlayer">Start New Game</p>
+                                        </div>
+                                        <form id="form-2" class="">
+                                            <input type="text" id="input-2" placeholder = "Enter name">
+                                            <a id="btnSubmit-2" class="btn  btn-danger text-light" >Submit</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form">
+                                <form id="form">
+                                    <input type="text" id="input" placeholder="Enter name">
+                                    <a id="btnSubmit" class="btn  btn-warning text-light" >Submit</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

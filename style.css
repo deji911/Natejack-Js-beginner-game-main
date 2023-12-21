@@ -1,0 +1,790 @@
+:root{
+    --first-color: goldenrod;
+    --second-color: rgb(196, 4, 4);
+    --third-color: green;
+    --fourth-color: rgb(0, 0, 144);
+}
+html{
+    height: 100% !important;
+    overflow: hidden !important;
+}
+body{
+    background-color: rgb(72, 173, 108);
+    width: 100vw !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+.container-fluid {
+    height: 100% !important;
+}
+.row{
+    height: 100% !important;
+}
+.page-wrapper{
+
+}
+.first{
+    color: var(--first-color);
+}
+.second{
+    color: var(--second-color);
+    font-weight: bold;
+}
+.third{
+    color: var(--third-color);
+    font-weight: bold;
+}
+.fourth{
+    color:var(--fourth-color);
+}
+.bg-custom{
+    background-color: var(--first-color);
+} 
+.container-fluid .col .bg *{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid .col .bg .small {
+    font-family: 'Farsan',cursive;
+    font-size: 10.5px;
+    font-weight: bold;
+}
+ul{
+    
+    padding-left: 10px !important;
+}
+.col .bg h5, .col .bg h4{
+    font-family: 'Farsan',cursive;
+}
+.pointer{
+    cursor: pointer;
+}
+.myModal .overflow-auto{
+    text-align: left !important;
+    height: 50vh !important;
+    margin-top: 50% !important;
+}
+.col-lg-4{
+    height: 100% !important;
+}
+.container-fluid .col .bg{
+margin-left: 3vh;
+    width: 75%;
+    height: 90%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: bolder;
+    margin-top: 30px;
+    background: rgba(158, 95, 95, 0.9);
+    border: solid rgb(104, 72, 50) 3px;
+    border-radius: 8px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    /* backdrop-filter: blur(20px); */
+}
+.container-fluid .col .bg::-webkit-scrollbar {
+    width: 5px;
+    
+}
+.container-fluid .col .bg::-webkit-scrollbar-track {
+    background: rgba(158, 95, 95); 
+    border-radius: 20px !important;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(120, 76, 76); 
+    border-radius: 20px !important;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(110, 68, 68); 
+}
+
+/* .container-fluid .col h1{
+    position: fixed;
+    top: 40%;
+    font-size: 3.5rem;
+    z-index: -1;
+    color: aliceblue;
+    font-family: 'Lilita One', cursive;
+    opacity: .5;
+} */
+.container-fluid .col-lg-8{
+    height: 100% !important;
+    overflow: hidden;
+}
+li button{
+    width: 45px !important;
+    font-size: 10px !important;
+    color: #fff !important;
+    box-shadow: none!important;   
+
+}
+div.gamebody{
+    height: 80% !important;
+    /* overflow: hidden; */
+
+}
+.container-fluid  .name-board{
+    background-color: rgb(48, 48, 111);
+    height: 10%;
+    color: #fff;
+    border: solid 2px rgb(34, 34, 77) !important;
+    border-top: none !important;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;   
+}
+
+.name-board .mt-1,
+.name-board-2 .mt-1{
+    margin-top: 3px !important;
+}
+.name-board-2 .mt-1{
+    margin-top: 7px !important;
+}
+
+.name-board p,
+.name-board-2 p{
+    font-family: 'Lilita One', cursive !important;
+}
+
+.container-fluid  .name-board-2{
+    background-color: rgb(48, 48, 111);
+    /* width: max-content; */
+    height: 10%;
+    color: #fff;
+    border: solid 2px rgb(34, 34, 77) !important;
+    border-bottom: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 3px 0px inset;   
+
+}
+.col-lg-8 .gamebody .gamebody-contents{
+
+    height: 90% !important;
+    overflow: hidden;
+}
+.col-lg-8 h1{
+    position: absolute !important;
+    width: max-content;
+    height: max-content;
+    left: 50%;
+    top: 50% !important;  
+    transform: translate(20%) !important;
+    z-index: -1;
+    font-family: 'Lilita One', cursive !important;
+    font-size: 3.5rem;
+    opacity: .1;
+    color: #fff;
+}
+/* .gamebody .buttons{
+    position: relative;
+} */
+.col-lg-8 .gamebody .btn,li .btn{
+    background-color: rgb(7, 175, 7) !important;
+    font-family: 'Lilita One', cursive !important;
+    border-radius: 20px 5px 20px 5px !important;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    width: 60px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;   
+
+
+}
+li{
+    list-style-position: inside;
+}
+
+.col-lg-8 .gamebody .btn:active, 
+.modal-body button:active{
+    background-color: rgb(4, 97, 4) !important;
+}
+.col-lg-8 .gamebody .btn-1, li .btn-1{
+    background-color: red !important;
+    width: 60px;
+}
+
+.col-lg-8 .gamebody .btn-2, li .btn-2{
+    background-color: yellow !important;
+    color: rgb(118, 5, 5);
+    width: 60px;
+}
+.col-lg-8 .gamebody .btn-1:active{
+    background-color: rgb(172, 3, 3) !important;
+}
+
+.col-lg-8 .gamebody .btn-2:active{
+    background-color: rgb(167, 167, 3) !important;
+}
+
+.gamebody .buttons{
+    position: relative;
+    top: 4px;   
+}
+.gamebody .cards{
+    font-family: 'Lilita One', cursive !important;
+    font-size: 20px;
+    color: rgb(218, 102, 0);
+}
+.gamebody i{
+    color: rgb(239, 13, 13);
+    font-size: 6px;
+    text-shadow: 0px 1px 0px #ffffff,
+    0px 10px 2px rgba(0,0,0,0.05);
+
+}
+.gamebody .sum-cards{
+    color:rgb(246, 176, 0);
+    position: relative;
+    font-size: 2.2rem;
+    font-family: 'Lilita One', cursive !important;
+    text-shadow: 0px 3px 0px #af8402,
+    0px 4px 2px rgba(0,0,0);
+}
+.gamebody .pot{
+    font-family: 'Lilita One', cursive !important;
+    font-size: 20px;
+    color: rgb(113, 0, 218);
+}
+.gamebody .pot *{
+    padding: 0;
+    margin: 0;
+}
+.gamebody .player-cards *, .gamebody .bot-cards *{
+    padding: 0;
+    margin: 0;
+}
+.gamebody .myModal,
+.gamebody .myModal2, 
+.gamebody .myModal-1,
+.progress-2 .myModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0);
+    display: none;
+}
+
+.myModal .modal-body{
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    background-color: rgb(255, 211, 164);
+    border-radius: 10px;
+    border: brown solid 3px;
+    font-family: 'Lilita One', cursive !important;
+    color: red;
+    text-transform: capitalize;
+    animation: slide 1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+
+}
+.gamebody #modal-3{
+    display: none;
+}
+.progress-2 .myModal{
+    background-color: rgb(0,0,0,.6) !important;
+    /* display: block !important; */
+}
+.progress-2 .myModal .modal-body{
+    animation: none !important;
+    background-color: rgb(0, 38, 88);
+    border: solid 3px rgb(120, 2, 2);
+    overflow: hidden;
+}
+.modal-body form{
+    position: relative;
+    animation: slideR 3s;
+    /* left: -350px; */
+}
+@keyframes slideR {
+    0%{
+        left: -360px;
+    }
+    100%{
+        left: 0;
+    }
+}
+ .myModal2 .modalcontents {
+    margin-top: 50px;
+    font-family: 'Lilita One', cursive !important;
+    text-shadow: 0px 1px 0px #2a2a2a,
+    0px 3px 2px rgba(0,0,0);
+    animation: pop 1s infinite;
+}
+
+@keyframes pop {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+    
+}
+
+
+@keyframes slide {
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 150px;
+    }
+}
+.modal-body span{
+    color: green;
+}
+.modal-body button{
+    margin: 5px 25px 5px 25px ;
+    width: 60px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;   
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(1, 176, 1);
+}
+
+#modal-1 .modal-body{
+    height: 180px;
+}
+#modal-1 .modal-body *{
+    margin: 0;
+    padding: 0;
+}
+#modal-1 .modal-body .tie-msg{
+    font-size: 10px;
+}
+#modal-1 .modal-body p{
+    font-size: smaller;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+#modal-1 .modal-body h3{
+    color: green;
+
+}
+
+.myModal .modal-head h2{
+    color: var(--second-color);
+    font-size: 2.8rem;
+    text-shadow: 0px 3px 2px brown,
+    0px 5px 2px black;
+    animation: popp 1s infinite;
+    font-family: 'Lilita One', cursive !important;
+}
+@keyframes popp {
+    0%{
+        transform: scale(0.5.0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+    
+}
+.myModal-1{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.myModal-1 .modal-contents-1{
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%)
+
+
+}
+.myModal-1 .time-out-msg h3,
+.myModal-1 .time-out-msg p{
+    font-size: 3rem;
+    color: grey;
+    font-family: 'Lilita One',cursive;
+}
+
+.player-cards-bg{
+    border: 2px solid #fff;
+    width: 30px;
+    height: 45px;
+    padding: 5px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 25px;
+    background-color: blue;
+    box-shadow: 0px  0px 2px black;
+    color: white;
+}
+.bot-cards-bg{
+    border: 2px solid #fff;
+    width: 30px;
+    height: 45px;
+    padding: 5px;
+    color: white;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 25px;
+    background-color: red;
+    box-shadow: 0px  0px 2px black;
+}
+#bot-sum{
+    min-height: 8vh !important;
+}
+#bot-cards{
+    min-height: 8vh !important;
+}
+#icon{
+    height: 8vh !important;
+}
+
+.choice{
+    position: absolute;
+    width: 200px;
+    height: 20px !important;
+    top: 10%;
+    box-sizing: border-box;
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    /* display: none; */
+}
+#tie-button{
+    font-size: 10px;
+    width: 100px;
+    min-height: 30px;
+
+}
+.bot-choice{
+    color: rgb(199, 2, 2);
+}
+.player-choice{
+    color: rgb(0, 0, 190);
+}
+.table{
+    color: rgb(178, 0, 98);
+}
+.player-chips{
+    position: absolute !important;
+    margin-top: 40px;
+}
+.chips{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 9px;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;   
+    
+}
+.chips-el{
+    width: 23px;
+    font-family: 'Lilita One', cursive;
+    height: 23px;
+    padding-top: 5px;
+    border-radius: 100%;
+    border: #ffff soild 2px;
+    background-color: #fff;
+    position: relative;
+    margin-left: 3.55px;
+    top: 3px;
+    margin-top: 10.5px;
+    cursor: pointer !important;
+}
+.bet{
+    font-family: 'Lilita One', cursive;
+    color: rgb(255, 128, 0);
+    text-shadow: 0px 0px 1px rgb(64, 64, 64);
+    font-size: 13px;
+}
+#play-btn-msg{
+    position: absolute !important;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -160%);
+    font-family: 'Lilita One', cursive;
+    color: red;
+    display: none;
+}
+#player-cash-msg{
+    position: absolute;
+    transform: translate(70%, -10%);
+    font-weight: lighter;
+    font-size: 14px;
+}
+#bot-cash-msg{
+    position: absolute;
+    transform: translate(70%, 95%);
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.page-wrapper{
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+    background-image: url(./bg-00.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-wrapper .container-fluid{
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header{
+    height: 50vh;
+    font-family: 'Lilita One', cursive;
+    color: rgb(231, 177, 40);
+
+}
+.header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-size: 5rem;
+    text-shadow: -3px 1px 0px rgb(199, 150, 25),-4px 1px 0px rgb(199, 150, 25),-5px 1px 0px rgb(199, 150, 25),
+    -7px 3px 2px rgba(0,0,0);
+}
+.header h1{
+    z-index: 1;
+}
+.header h1:nth-child(2){
+    transform: translate(-50%, -80%);
+}
+.progress-2{
+    margin-top: 10%; 
+    display: flex !important;
+    flex-direction: column;
+    
+}
+
+.progress-2 progress{
+    height: 10px;
+    width: 50vw !important;
+    /* margin-left: 20vw !important; */
+    border: none !important;
+    margin-top: 0px;
+    /* display: none; */
+}
+.progress-2 p{
+    color: #af8402;
+}
+progress {
+    background: rgb(197, 197, 197);
+    border-radius: 20px !important;
+  }
+progress::-moz-progress-bar {
+    background: goldenrod;
+    border-radius: 10px;
+}
+  
+progress::-webkit-progress-value {
+    background:goldenrod;
+    border-radius: 10px;
+  }
+  
+progress::-webkit-progress-bar {
+    background: rgb(197, 197, 197);
+    border-radius: 10px !important;
+  }
+.progress-2 button{
+    width: max-content;
+    margin-top: 5px;
+    background-color: #af8402;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-family: 'Lilita One',cursive;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+    display: none;
+}
+
+form{
+    display: none;
+    animation: popUp 1s;
+}
+
+@keyframes popUp {
+    0%{
+        transform: scale(0.0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+form a *{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+form a{
+    font-family: 'Lilita One',cursive !important;
+}
+form input{
+    position: relative;
+    top: 3px !important;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+#modal-6 .modal-body,
+#modal-7 .modal-body{
+    animation: none !important;
+}
+
+#modal-6 *,
+#modal-7 *{
+    padding: 0;
+    margin: 0;
+}
+#modal-6 .modal-body,
+#modal-7 .modal-body{
+    background-color: lightblue;
+    border: 5px solid rgb(66, 120, 153);
+}
+#modal-6 .cash-balance,
+#modal-7 .cash-balance{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 3px -28px inset;
+}
+.cash-balance p{
+    text-shadow: 0px 0px -1px black;
+    font-size: 19px;
+    margin-top: 10px;
+}
+#modal-6 small,
+#modal-7 small{
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#modal-8{
+    background-color:  rgba(0, 0, 0, 1) !important;
+}
+.statements .text-info{
+    font-size: 10px;
+    color: #af8402 !important;
+    font-family: 'Roboto mono', sans-serif;
+    font-weight: bold;
+}
+.statements .bg-primary{
+    border-radius: 30px 0px 30px 0px;
+}
+.modal-contents .text-decoration-underline{
+    cursor: pointer;
+}
+
+@media(max-width:992px){
+   
+    .myModal .modal-body{
+        transform: translate(0%, -60%) !important;
+    }
+    html{
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    body{
+        background-color: rgb(72, 173, 108);
+        width: 100vw !important;
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+}
+@media  (max-width:767px) {
+    .player-chips{
+        position: absolute !important;
+        margin-top: 100px !important;
+    }
+     .col-lg-8 h1{
+        position: absolute !important;
+        transform: translate(-50%) !important;
+    }
+    html{
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    body{
+        background-color: rgb(72, 173, 108);
+        width: 100vw !important;
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    
+    .myModal .modal-body{
+        transform: translate(-50%, -100%) !important;
+    }
+}
+
+@media  (max-width:767px) and (max-height:700px) {
+    .player-chips{
+        margin-top: 30px !important;
+    }
+}
+@media  (max-width:576px) {
+    .col-lg-8 h1{
+        position: absolute !important;
+        transform: translate(-50%) !important;
+    }
+    html{
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    body{
+        background-color: rgb(72, 173, 108);
+        width: 100vw !important;
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    .header h1{
+        font-size: 4rem !important;
+        text-shadow: -3px 1px 0px rgb(199, 150, 25),-3px 1px 0px rgb(199, 150, 25),
+    -4px 3px 2px rgba(0,0,0);
+    }
+
+}
+
+@media  (max-width:576px) and (max-height:700px) {
+    .col-lg-8 h1{
+        position: absolute !important;
+        transform: translate(-50%) !important;
+    }
+    html{
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    body{
+        background-color: rgb(72, 173, 108);
+        width: 100vw !important;
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    .player-chips{
+        margin-top: 30px !important;
+    }
+    #rules{
+        position: relative;
+        bottom: 9vh !important;
+    }
+    .header h1{
+        font-size: 4rem !important;
+        text-shadow: -3px 1px 0px rgb(199, 150, 25),-3px 1px 0px rgb(199, 150, 25),
+    -4px 3px 2px rgba(0,0,0);
+    }
+}
